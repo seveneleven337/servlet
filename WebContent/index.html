@@ -1,0 +1,51 @@
+<!--This is the HTML form -->
+<!Doctype html>
+<html>
+<head>
+<title>Welcome Forum</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Forum exercise</h1>
+	<p>Add</p>
+	<form action="Forum" method="GET">
+		<table>
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" size="40" name="userName"></td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td><input type="text" size="40" name="message"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="action" value="submit"></td>
+			</tr>
+		</table>
+	</form>
+	<br>
+	<br>
+
+	<p>Search</p>
+	<form action="Forum" method="GET">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" size="40" name="userName"></td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td><input type="text" size="40" name="message"></td>
+			</tr>
+			<tr>
+				<td>Date</td>
+				<td><input type="text" size="40" name="date"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="action" value="search"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
