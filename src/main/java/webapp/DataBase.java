@@ -13,11 +13,11 @@ public class DataBase {
 	public DataBase() {
 	}
 
-	public void addNewUser(String userName, String message) {
+	public void addNewUser(String userName, String message, String[] sports, String[] views) {
 		Date dat = Calendar.getInstance().getTime();
 		DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm");
 		String date = dateFormat.format(dat);
-		User temp = new User(userName, message, date);
+		User temp = new User(userName, message, date, sports, views);
 		users.add(temp);
 	}
 
@@ -25,7 +25,7 @@ public class DataBase {
 		return users;
 	}
 
-	public ArrayList<User> search(String name, String message, String date) {
+	/*public ArrayList<User> search(String name, String message, String date) {
 		ArrayList<User> temp = new ArrayList<>();
 		for (User user : users) {
 			if (user.getName().equals(name) && !name.isEmpty() && name != null) {
@@ -37,6 +37,6 @@ public class DataBase {
 			}
 		}
 		return temp;
-	}
+	}*/
 	
 }
